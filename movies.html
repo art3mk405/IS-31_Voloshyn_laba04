@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>IWatch!/Фільми</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <h1>І<span class="main-color">W</span>atch!</h1>
+    
+                    <!-- Бургер-меню -->
+                    <div class="burger-menu" id="burger-menu">☰</div>
+    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="#" id="search-toggle">Пошук</a></li>
+                        <div class="search-container" id="search-container">
+                            <input type="text" id="search" placeholder="Пошук..." />
+                            <button id="search-button">🔍</button>
+                        </div>
+                        <li><a href="movies.html">Фільми</a></li>
+                        <li><a href="series.html">Серіали</a></li>
+                        <li><a href="fav.html">Улюблене</a></li>
+                        <li>
+                            <a href="login.html" class="btn btn-hover">
+                                <span>Увійти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- END NAV -->
+
+    <main>
+
+        <!-- ЕКШН (БОЙОВИКИ) -->
+        <div class="show">
+            <div class="tv_show">
+                <h2>Екшн (бойовики)</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn left-btn" id="left-btn-ekshn"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-wrapper">
+                        <div class="box" id="carousel-ekshn">
+
+                            <!-- Картка 1 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Темний лицар</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2008</p>
+                                        </div>
+                                        <p class="category">Екшн/Драми/Кримінал</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>9</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>152хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/Temniy.webp" alt="Темний лицар">
+                            </div>
+                            <!-- Картка 2 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Початок</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2010</p>
+                                        </div>
+                                        <p class="category">Екшн/Пригоди/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.7</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>148хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/pochatok.jpg" alt="Початок">
+                            </div>
+                            <!-- Картка 3 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Матриця</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1999</p>
+                                        </div>
+                                        <p class="category">Екшн/Фантастика</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>9.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>136хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/matrix.webp" alt="Матриця">
+                            </div>
+                            <!-- Картка 4 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Термінатор 2: Судний день</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1991</p>
+                                        </div>
+                                        <p class="category">Екшн/Фантастика</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.6</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>166хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/terminator 2.jpg" alt="Термінатор 2: Судний день">
+                            </div>
+                            <!-- Картка 5 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Джон Вік 4</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2023</p>
+                                        </div>
+                                        <p class="category">Екшн/Детективи/Кримінал</п>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>169хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/uik.webp" alt="Джон Вік 4">
+                            </div>
+                            <!-- Картка 6 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Вартові галактики 3</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2023</p>
+                                        </div>
+                                        <p class="category">Екшн/Комедія/Пригоди</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>150хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/galaktiki.webp" alt="Вартові галактики 3">
+                            </div>
+                            <!-- Картка 7 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Міцний горішок</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1988</p>
+                                        </div>
+                                        <p class="category">Екшн/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>131хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/gorishok.jpg" alt="Міцний горішок">
+                            </div>
+                            <!-- Картка 8 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Пірати Карибського Моря: Прокляття чорної перлини</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2003</p>
+                                        </div>
+                                        <p class="category">Екшн/Пригоди</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.1</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>143хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/Pirates_of_the_Caribbean_movie.jpg"
+                                    alt="Пірати Карибського Моря: Прокляття чорної перлини">
+                            </div>
+                            <!-- Картка 9 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Дедпул</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2016</p>
+                                        </div>
+                                        <p class="category">Екшн/Комедія/Пригоди</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>108хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/deadpool.jpg" alt="Дедпул">
+                            </div>
+                            <!-- Картка 10 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Люди Ікс: Дні минулого майбутнього</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2014</p>
+                                        </div>
+                                        <p class="category">Екшн/Трилер/Пригоди</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.9</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>132хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/ekshn/x-men.jpg" alt="Люди Ікс: Дні минулого майбутнього">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn right-btn" id="right-btn-ekshn"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- END ЕКШН (БОЙОВИКИ) -->
+
+        <!-- ДЕТЕКТИВИ -->
+        <div class="show">
+            <div class="tv_show">
+                <h2>Детективи</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn left-btn" id="left-btn-detectives"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-wrapper">
+                        <div class="box" id="carousel-detectives">
+                            <!-- Картка 1 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Хелловін. Кінець</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2022</p>
+                                        </div>
+                                        <p class="category">Детектив/Трилер/Жахи</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>9.1</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>111хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/hallowin.jpg" alt="Хелловін. Кінець">
+                            </div>
+                            <!-- Картка 2 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Зелена миля</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1999</p>
+                                        </div>
+                                        <p class="category">Детективи/Драми/Кримінал</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.6</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>189хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/green-mile.jpg" alt="Зелена миля">
+                            </div>
+                            <!-- Картка 3 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">ОлдБой</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2003</p>
+                                        </div>
+                                        <p class="category">Детективи/Драми/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.3</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>120хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/oldboy.jpg" alt="ОлдБой">
+                            </div>
+                            <!-- Картка 4 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Шосте чуття</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1999</p>
+                                        </div>
+                                        <p class="category">Детективи/Драми/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>107хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/sixth.webp" alt="Шосте чуття">
+                            </div>
+                            <!-- Картка 5 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Острів проклятих</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2010</p>
+                                        </div>
+                                        <p class="category">Детективи/Драми/Трилери</п>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>138хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/shutt-island.jpg" alt="Острів проклятих">
+                            </div>
+                            <!-- Картка 6 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Той, хто біжить по лезу 2049</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2017</p>
+                                        </div>
+                                        <p class="category">Детективи/Екшн/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>164хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/blade-runner.jpg" alt="Той, хто біжить по лезу 2049">
+                            </div>
+                            <!-- Картка 7 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Морські паразити</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2019</p>
+                                        </div>
+                                        <p class="category">Детективи/Трилери/Жахи</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>95хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/sea.jpg" alt="Морські паразити">
+                            </div>
+                            <!-- Картка 8 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Первісний страх</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1996</p>
+                                        </div>
+                                        <p class="category">Детективи/Драми/Кримінал</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.7</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>129хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/strax.jpg" alt="Первісний страх">
+                            </div>
+                            <!-- Картка 9 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Пила</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2004</p>
+                                        </div>
+                                        <p class="category">Детективи/Кримінал/Жахи</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.6</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>103хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/saw.jpg" alt="Пила">
+                            </div>
+                            <!-- Картка 10 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Адвокат диявола</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1997</p>
+                                        </div>
+                                        <p class="category">Детективи/Драми/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.5</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>144хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/detectives/advocat.jpg" alt="Адвокат диявола">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn right-btn" id="right-btn-detectives"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- END ДЕТЕКТИВИ -->
+
+        <!-- Жахи -->
+        <div class="show">
+            <div class="tv_show">
+                <h2>Жахи</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn left-btn" id="left-btn-horror"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-wrapper">
+                        <div class="box" id="carousel-horror">
+                            <!-- Картка 1 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Сяйво</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1980</p>
+                                        </div>
+                                        <p class="category">Жахи/Драми/Трилер/</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.4</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>144хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/shining.jpg" alt="Сяйво">
+                            </div>
+                            <!-- Картка 2 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Чужий</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1979</p>
+                                        </div>
+                                        <p class="category">Жахи/Трилери/Екшн</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.5</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>117хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/Alien.jpg" alt="Чужий">
+                            </div>
+                            <!-- Картка 3 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Хижак</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1987</p>
+                                        </div>
+                                        <p class="category">Жахи/Екшн/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>107хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/predator.webp" alt="Хижак">
+                            </div>
+                            <!-- Картка 4 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Потяг до Пусана</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2016</p>
+                                        </div>
+                                        <p class="category">Жахи/Екшн/Драми</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.6</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>118хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/train-to-busan.jpg" alt="Потяг до Пусана">
+                            </div>
+                            <!-- Картка 5 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Техаська різанина бензопилою</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1974</p>
+                                        </div>
+                                        <p class="category">Жахи/Трилери</п>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.5</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>83хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/texas.jpg" alt="Техаська різанина бензопилою">
+                            </div>
+                            <!-- Картка 6 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Тихе місце</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2018</p>
+                                        </div>
+                                        <p class="category">Жахи/Драми/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.5</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>90хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/quiet place.jpg" alt="Тихе місце">
+                            </div>
+                            <!-- Картка 7 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">28 днів потому</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2002</p>
+                                        </div>
+                                        <p class="category">Жахи/Трилери/Драми</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.5</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>113хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/28.jpg" alt="28 днів потому">
+                            </div>
+                            <!-- Картка 8 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Світанок мерців</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2004</p>
+                                        </div>
+                                        <p class="category">Жахи/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.3</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>101хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/svitanok.jpg" alt="Світанок мерців">
+                            </div>
+                            <!-- Картка 9 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Спуск</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2005</p>
+                                        </div>
+                                        <p class="category">Жахи/Пригоди/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>99хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/spusk.jpg" alt="Спуск">
+                            </div>
+                            <!-- Картка 10 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Всесвітня Війна Z</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2013</p>
+                                        </div>
+                                        <p class="category">Жахи/Пригоди/Екшн</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>116хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/jahi/worldwarz.jpg" alt="Всесвітня Війна Z">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn right-btn" id="right-btn-horror"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- END ЖАХИ -->
+
+        <!-- Пригоди -->
+        <div class="show">
+            <div class="tv_show">
+                <h2>Пригоди</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn left-btn" id="left-btn-adventure"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-wrapper">
+                        <div class="box" id="carousel-adventure">
+                            <!-- Картка 1 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Володар перснів: Повернення короля</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2003</p>
+                                        </div>
+                                        <p class="category">Пригоди/Екшн/Драми</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>9</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>201хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/The_Return_of_the_King.jpg" alt="Володар перснів: Повернення короля">
+                            </div>
+                            <!-- Картка 2 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Дюна: Частина друга</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2024</p>
+                                        </div>
+                                        <p class="category">Пригоди/Екшн/Драми</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.7</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>166хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/dune2.jpg" alt="Дюна: Частина друга">
+                            </div>
+                            <!-- Картка 3 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Інтерстеллар</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1987</p>
+                                        </div>
+                                        <p class="category">Пригоди/Драми/Фантастика</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.7</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>169хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/interstellar.webp" alt="Хижак">
+                            </div>
+                            <!-- Картка 4 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Людина-павук. Додому шляху нема</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2021</p>
+                                        </div>
+                                        <p class="category">Пригоди/Екшн/Комедія</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>140хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/spider.jpg" alt="Людина-павук. Додому шляху нема">
+                            </div>
+                            <!-- Картка 5 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Месники: Завершення</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2019</p>
+                                        </div>
+                                        <p class="category">Пригоди/Екшн/Фантастика</п>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.4</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>180хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/mesniki.png" alt="Месники: Завершення">
+                            </div>
+                            <!-- Картка 6 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Парк Юрського періоду</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1993</p>
+                                        </div>
+                                        <p class="category">Пригоди/Трилери/Фантастика</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>127хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/jurassik.webp" alt="Парк Юрського періоду">
+                            </div>
+                            <!-- Картка 7 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Індіана Джонс і Храм Долі</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1975</p>
+                                        </div>
+                                        <p class="category">Пригоди/Екшн</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.5</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>118хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/indiana.jpg" alt="Індіана Джонс і Храм Долі">
+                            </div>
+                            <!-- Картка 8 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Щелепи</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1975</p>
+                                        </div>
+                                        <p class="category">Пригоди/Жахи/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.1</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>124хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/jaws.jpg" alt="Щелепи">
+                            </div>
+                            <!-- Картка 9 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Марсіанин</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2015</p>
+                                        </div>
+                                        <p class="category">Пригоди/Драми/Фантастика</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>144хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/marsianin.jpg" alt="Марсіанин">
+                            </div>
+                            <!-- Картка 10 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">На межі майбутнього</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2014</p>
+                                        </div>
+                                        <p class="category">Пригоди/Екшн/Фантастика</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>7.9</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>113хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/adventure/namesji.jpg" alt="На межі майбутнього">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn right-btn" id="right-btn-adventure"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- END пригоди -->
+
+        <!-- Драми -->
+        <div class="show">
+            <div class="tv_show">
+                <h2>Драми</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn left-btn" id="left-btn-dramas"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-wrapper">
+                        <div class="box" id="carousel-dramas">
+                            <!-- Картка 1 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Хрещений батько</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1972</p>
+                                        </div>
+                                        <p class="category">Драми/Кримінал</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>9.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>175хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/godfather.webp" alt="Хрещений батько">
+                            </div>
+                            <!-- Картка 2 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Список Шиндлера</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1993</p>
+                                        </div>
+                                        <p class="category">Драми/Військові/Історичні</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>9</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>195хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/spisok.jpg" alt="Список Шиндлера">
+                            </div>
+                            <!-- Картка 3 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Кримінальне чтиво</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1994</p>
+                                        </div>
+                                        <p class="category">Драми/Кримінал/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.9</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>154хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/crime.jpg" alt="Кримінальне чтиво">
+                            </div>
+                            <!-- Картка 4 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Бійцівський клуб</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1999</p>
+                                        </div>
+                                        <p class="category">Драми</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>139хв</п>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/fight-club.webp" alt="Бійцівський клуб">
+                            </div>
+                            <!-- Картка 5 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Славні хлопці</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">1990</p>
+                                        </div>
+                                        <p class="category">Драми/Кримінал</п>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.7</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>146хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/slavni.jpg" alt="Славні хлопці">
+                            </div>
+                            <!-- Картка 6 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Джокер</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2019</p>
+                                        </div>
+                                        <p class="category">Драми/Кримінал/Трилери</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.4</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>122хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/joker.jpg" alt="Джокер">
+                            </div>
+                            <!-- Картка 7 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Оппенгеймер</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2013</p>
+                                        </div>
+                                        <p class="category">Драми/Військові/Історичні</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.3</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>180хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/oppenheimer.jpg" alt="Оппенгеймер">
+                            </div>
+                            <!-- Картка 8 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Ігри розуму</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2001</p>
+                                        </div>
+                                        <p class="category">Драми/Біографія</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.2</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>135хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/game.jpg" alt="Ігри розуму">
+                            </div>
+                            <!-- Картка 9 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Мандарини</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2013</p>
+                                        </div>
+                                        <p class="category">/Драми/Військові</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8.1</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>87хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/Mandariinid-poster.jpg" alt="Мандарини">
+                            </div>
+                            <!-- Картка 10 -->
+                            <div class="card">
+                                <div class="details">
+                                    <div class="left">
+                                        <p class="name">Чорний лебідь</p>
+                                        <div class="date_quality">
+                                            <p class="quality">HD</p>
+                                            <p class="date">2010</p>
+                                        </div>
+                                        <p class="category">Драми/Трилер</p>
+                                        <div class="info">
+                                            <div class="rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p>8</p>
+                                            </div>
+                                            <div class="time">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p>108хв</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <img src="img/mov/dramas/black.jpg" alt="Чорний лебідь">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn right-btn" id="right-btn-dramas"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- END Драми -->
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-row">
+                <div class="logo-section2">
+                    <img src="./img/logo.png" alt="Logo">
+                    <h1>І<span class="main-color">W</span>atch!</h1>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-building"></i> Київ, Україна, Kyrylivska street, 110</p>
+                    <p><i class="fa-solid fa-envelope"></i> iwatch@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +380679239347</p>
+                    <p><i class="fa-solid fa-address-card"></i><a href="description.html"> Про нас</a></p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://t.me" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://viber.com" target="_blank"><i class="fab fa-viber"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- APP SCRIPT  -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

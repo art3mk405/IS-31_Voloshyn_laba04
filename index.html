@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>IWatch!</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+    <!-- NAV -->
+    <header>
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <h1>І<span class="main-color">W</span>atch!</h1>
+    
+                    <!-- Бургер-меню -->
+                    <div class="burger-menu" id="burger-menu">☰</div>
+    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="#" id="search-toggle">Пошук</a></li>
+                        <div class="search-container" id="search-container">
+                            <input type="text" id="search" placeholder="Пошук..." />
+                            <button id="search-button">🔍</button>
+                        </div>
+                        <li><a href="movies.html">Фільми</a></li>
+                        <li><a href="series.html">Серіали</a></li>
+                        <li><a href="fav.html">Улюблене</a></li>
+                        <li>
+                            <a href="login.html" class="btn btn-hover">
+                                <span>Увійти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- END NAV -->
+
+
+    <main>
+        <!-- HERO SECTION -->
+        <div class="hero-section">
+            <!-- HERO SLIDE -->
+            <div class="hero-slide">
+                <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+                    <!-- SLIDE ITEM  -->
+                    <div class="hero-slide-item">
+                        <img src="./img/the-dark-knight-header.avif" alt="Темний лицар">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wraper">
+                                <div class="item-content-title top-down">
+                                    Темний лицар
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>9</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>152 хв</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span style="color: rgb(139, 16, 16);">HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>12+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                    Бетмен продовжує свою війну зі злочинним світом Готема. І в цьому великому очищенні
+                                    міста від антигромадських типів у нього є помічники: Джим Гордон і Харві Дент, які
+                                    прагнуть надати йому всю можливу підтримку.
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="#" class="btn btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Дивитися зараз</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SLIDE ITEM -->
+                    <!-- SLIDE ITEM  -->
+                    <div class="hero-slide-item">
+                        <img src="./img/the-shawshank-redemption-poster.webp" alt="Втеча з Шоушенка">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wraper">
+                                <div class="item-content-title top-down">
+                                    Втеча з Шоушенка
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>9.3</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>142 хв</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span style="color: rgb(139, 16, 16);">HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                    Драма «Втеча з Шоушенка», заснована на повісті Стівена Кінга «Ріта Гейворт із
+                                    Шоушенка», розповідає про банкіра Енді Дюфрейна, якого засуджують до довічного
+                                    ув'язнення за злочин, якого він не скоював. Стикнувшись із жорстокістю тюремного
+                                    життя, Енді знаходить друга у в'язні на ім'я Ред і таємно планує втечу.
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="#" class="btn btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Дивитися зараз</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SLIDE ITEM -->
+                    <!-- SLIDE ITEM  -->
+                    <div class="hero-slide-item">
+                        <img src="./img/wanda-banner.jpg" alt="Ванда/Віжен">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wraper">
+                                <div class="item-content-title top-down">
+                                    Ванда/Віжен
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>7.9</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>26 хв/серія</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span style="color: rgb(139, 16, 16);">HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                    «ВандаВіжн» - серіал, в основі якого лежать фантастичні комікси від Marvel. У
+                                    серіалі йтиметься про двох супер-героїв - Ванди і Віжена.
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="#" class="btn btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Дивитися зараз</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SLIDE ITEM -->
+                    <!-- SLIDE ITEM  -->
+                    <div class="hero-slide-item">
+                        <img src="./img/avengers-infinity-war-poster-2.jpg" alt="Месники: Війна нескінченності">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wraper">
+                                <div class="item-content-title top-down">
+                                    Месники: Війна нескінченності
+                                </div>
+                                <div class="movie-infos top-down delay-2">
+                                    <div class="movie-info">
+                                        <i class="bx bxs-star"></i>
+                                        <span>8.4</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <i class="bx bxs-time"></i>
+                                        <span>149 хв</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span style="color: rgb(139, 16, 16);">HD</span>
+                                    </div>
+                                    <div class="movie-info">
+                                        <span>12+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                    З'явився злий могутній титан Танос. Багато тисяч років він поневірявся по Всесвіту в
+                                    пошуку таємничих каменів нескінченності. Потім він об'єднав їх і отримав
+                                    наймогутніший артефакт - Рукавичку Нескінченності. Використовуючи цей раритет Танос
+                                    не тільки може легко перемогти кожного з героїв, а й легко знищити життя у всіх
+                                    дев'яти відомих світах.
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="#" class="btn btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Дивитися зараз</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SLIDE ITEM -->
+                </div>
+            </div>
+        </div>
+        <!-- END HERO SECTION -->
+
+        <!-- 2024 -->
+        <div class="second">
+
+            <div class="latest">
+
+                <h2>Популярні в 2024</h2>
+
+                <div class="box">
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Погані хлопці: Все або нічого</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Екшн/Комедія/Пригоди</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>7.0</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>115хв</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/bad-boys.jpg" alt="Погані хлопці: Все або нічого">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Дедпул і Росомаха</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Екшн/Комедія/Пригоди</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>8.3</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>127хв</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/deadpool-rosomaxa.jpg" alt="Дедпул і Росомаха">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Королівство планети мавп</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Екшн//Пригоди/Фантастика</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>7.1</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>145хв</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/monkey's-kingdom.jpg" alt="Королівство планети мавп">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Діва проти біди</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Екшн/Пригоди/Фентезі</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>6.1</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>108хв</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/diva.jpg" alt="Діва проти біди">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Пінгвін 1 сезон</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Драма/Кримінал</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>7.1</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>55хв/серія</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/pinguin.jpg" alt="Пінгвін 1 сезон">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END 2024 -->
+
+        <!-- Upcoming -->
+        <div class="upcoming">
+
+            <div class="movies_box">
+
+                <h2>Скоро у кіно</h2>
+
+                <div class="box">
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Підйомна сила</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Документальний/Військовий</p>
+
+                                <div class="info">
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>91хв</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/Pidyomna-sila.jpg" alt="Підйомна сила">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Усміхайся 2</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Жахи/Трилер</p>
+
+                                <div class="info">
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>132хв</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/usmixaysa2.jpg" alt="Усміхайся 2">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Кодове ім'я "Червоний"</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Пригоди/Екшн/Комедія</p>
+
+                                <div class="info">
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>122хв</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/chervoniy.jpg" alt="Кодове ім'я: Червоний">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Земля після</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Пригоди/Екшн</p>
+
+                                <div class="info">
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>90хв</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/zemlya.jpg" alt="Земля після">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Небезпечний рейс</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2024</p>
+                                </div>
+                                <p class="category">Трилер/Екшн</p>
+
+                                <div class="info">
+
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>120хв</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/reys.jpg" alt="Небезпечний рейс">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END Upcoming -->
+
+        <!-- TV shows -->
+        <div class="show">
+
+            <div class="tv_show">
+
+                <h2>Найкращі ТВ шоу світу</h2>
+
+                <div class="box">
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Пуститися берега</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2008-2013</p>
+                                </div>
+                                <p class="category">Драма/Кримінал/Трилер</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>9.5</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>45хв/серія</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/pustitusya.jpg" alt="Пуститися берега">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Чорнобиль</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2019</p>
+                                </div>
+                                <p class="category">Драма/Документальний</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>9.3</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>55хв/серія</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/chornobyl.jpg" alt="Чорнобиль">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Гра престолів</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2011-2019</p>
+                                </div>
+                                <p class="category">Драма/Пригоди/Фантастика</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>9.2</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>60хв/серія</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/got.jpg" alt="Гра престолів">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Шерлок</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">2010-2017</p>
+                                </div>
+                                <p class="category">Детективи/Драма/Кримінал</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>9.2</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>90хв/серія</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/sherlock.jpg" alt="Шерлок">
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="details">
+
+                            <div class="left">
+
+                                <p class="name">Друзі</p>
+                                <div class="date_quality">
+                                    <p class="quality">HD</p>
+                                    <p class="date">1994-2004</p>
+                                </div>
+                                <p class="category">Комедія/Ситком</p>
+
+                                <div class="info">
+
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>7.1</p>
+                                    </div>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>22хв/серія</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="right">
+
+                                <i class="fa-solid fa-play"></i>
+
+                            </div>
+
+                        </div>
+
+                        <img src="img/friends.jpg" alt="Друзі">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END TV shows -->
+
+
+
+        <h3>Топ 5 найпопулярніших фільмів за версією спільноти</h3>
+        <table class="popular-movies-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Фільм</th>
+                    <th>Рік</th>
+                    <th>Жанр</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Титанік</td>
+                    <td>1997</td>
+                    <td>Драма, Романтика</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Аватар</td>
+                    <td>2009</td>
+                    <td>Наукова фантастика, Пригоди</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Зоряні війни: Епізод IV</td>
+                    <td>1977</td>
+                    <td>Наукова фантастика, Пригоди</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Список Шиндлера</td>
+                    <td>1993</td>
+                    <td>Драма, Історичний</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Вічні</td>
+                    <td>2021</td>
+                    <td>Фантастика, Пригоди</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-row">
+                <div class="logo-section2">
+                    <img src="./img/logo.png" alt="Logo">
+                    <h1>І<span class="main-color">W</span>atch!</h1>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-building"></i> Київ, Україна, Kyrylivska street, 110</p>
+                    <p><i class="fa-solid fa-envelope"></i> iwatch@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +380679239347</p>
+                    <p><i class="fa-solid fa-address-card"></i><a href="description.html"> Про нас</a></p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://t.me" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://viber.com" target="_blank"><i class="fab fa-viber"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- APP SCRIPT  -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
